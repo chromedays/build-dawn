@@ -41,11 +41,11 @@ rem
 if exist "%ProgramFiles%\7-Zip\7z.exe" (
   set SZIP="%ProgramFiles%\7-Zip\7z.exe"
 ) else (
-  where /q 7za.exe || (
-    echo ERROR: 7-Zip installation or "7za.exe" not found
+  where /q 7z.exe || (
+    echo ERROR: 7-Zip installation or "7z.exe" not found
     exit /b 1
   )
-  set SZIP=7za.exe
+  set SZIP=7z.exe
 )
 
 rem
